@@ -1,0 +1,29 @@
+<!DOCKTYPE html>
+<html>
+	<head>
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+		<script src="jQuery/jquery-latest.js"></script>
+		<script>
+			$(document).ready(function() {
+				$("#button1").click(function() {
+					$("a[href]").hide();
+				});
+				$("#button2").click(function() {
+					$("a[href]").show();
+				});
+			});
+		</script>
+	</head>
+	<body>
+	<font size=7>
+		<a href="http://code.jquery.com/jquery-latest.js">1</a>
+		<a href="http://code.jquery.com/jquery-latest.js">2</a>
+		<a href="http://code.jquery.com/jquery-latest.js">3</a>
+		<a href="http://code.jquery.com/jquery-latest.js">4</a>
+	</font>
+		<br>
+		<button id="button1">Спрятать нечетные элементы!</button>
+		<button id="button2">Показать нечетные элементы!</button>
+
+</body>
+</html>

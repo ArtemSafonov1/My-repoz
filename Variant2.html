@@ -1,0 +1,29 @@
+<!DOCKTYPE html>
+<html>
+	<head>
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+		<script src="jQuery/jquery-latest.js"></script>
+		<script>
+			$(document).ready(function() {
+				$("#button1").click(function() {
+					$("tr:odd").hide();
+				});
+				$("#button2").click(function() {
+					$("tr:odd").show();
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<table border=2 size=5>
+		<tr><td>Первая строка</td></tr>
+		<tr><td>Вторая строка</td></tr>
+		<tr><td>Третья строка</td></tr>
+		<tr><td>Четвертая строка</td></tr>
+		</table>
+		<br>
+		<button id="button1">Спрятать нечетные элементы!</button>
+		<button id="button2">Показать нечетные элементы!</button>
+
+</body>
+</html>
